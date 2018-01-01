@@ -23,5 +23,5 @@ RUN pip install -r requirements.txt
 
 EXPOSE  5000
 #WORKDIR "examples/restaurantbot"
-CMD [ "python", "-m", "rasa_nlu.server", "-c","sample_configs/config_spacy.json" , "-o", "out.log" ]
+CMD [ "python", "-m", "rasa_nlu.server", "-c","sample_configs/config_spacy.json"  ]
 #CMD ["ls"]
