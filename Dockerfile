@@ -2,7 +2,7 @@ FROM python
 
 #Install Rasa CORE
 #RUN pip install rasa_core
-#RUN pip install rasa_nlu
+RUN pip install rasa_nlu
 #COPY ./dev-requirements.txt /
 #COPY ./requirements.txt /
 #COPY ./setup.py /
@@ -12,9 +12,9 @@ FROM python
 COPY . /
 
 RUN pip install -r requirements.txt
-#RUN pip install -U spacy
-#RUN python -m spacy download en 
-#RUN pip install -U scikit-learn scipy sklearn-crfsuite
+RUN pip install -U spacy
+RUN python -m spacy download en 
+RUN pip install -U scikit-learn scipy sklearn-crfsuite
 
 #COPY . /
 #ADD ./restaurantbot /
